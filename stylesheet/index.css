@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  padding: 20px;
+  background-color: hsl(148, 38%, 91%);
+}
+
+form {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 16px;
+  padding: 20px;
+  font-family: "Karla";
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form h2 {
+  font-weight: 700;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.firstName,
+.lastName,
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid hsl(187, 24%, 22%);
+}
+
+form .general,
+form .support {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid hsl(187, 24%, 22%);
+}
+
+#message {
+  height: 200px;
+}
+
+form .checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.star {
+  color: hsl(169, 82%, 27%);
+}
+
+form button {
+  background-color: hsl(169, 82%, 27%);
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 2px;
+}
