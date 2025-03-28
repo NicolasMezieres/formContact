@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <form method="post">
+        <h2>Contact Us</h2>
+        <fieldset>
+          <div>
+            <label for="firstName" aria-required="true">First Name</label>
+            <input id="firstName" name="firstName" required />
+          </div>
+          <div>
+            <label for="lastName" aria-required="true">Last Name</label>
+            <input id="lastName" name="lastName" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="email" aria-required="true">Email Address</label>
+          <input id="email" name="email" required />
+        </fieldset>
+        <fieldset>
+          <label for="queryType" aria-required="true">Query Type</label>
+          <div>
+            <input type="radio" id="general" name="query" value="General Enquiry" />
+            <label for="general">General Enquiry</label>
+          </div>
+          <div>
+            <input type="radio" id="support" name="query" value="Support Request" />
+            <label for="support">Support Request</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label id="message" aria-required="true">Message</label>
+          <input type="text" id="message" name="message" required />
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" id="checkbox" required />
+          <label for="checkbox" aria-required="true"
+            >I consent to being contacted by the team</label
+          >
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
